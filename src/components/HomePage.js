@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <>
-    <Navbar />
+    
       <div className="relative flex justify-center items-center max-w-screen min-h-screen overflow-hidden">
         <Bg />
         <h1 className='text-white flex flex-col justify-center items-center mx-4 gap-0  md:gap-2 xl:gap-3 text-center'>
           {/* Centering the image and text */}
-          <img className="w-11/12 sm:w-11/12 md:w-9/12 xl:w-9/12 2xl:w-11/12 max-w-full" src={img} alt="IDEAFORGE 1.0" />
+          <img className="w-11/12 sm:w-11/12 md:w-9/12 xl:w-9/12 2xl:w-9/12 max-w-full" src={img} alt="IDEAFORGE 1.0" />
           <p className='text-base sm:text-lg  md:text-xl lg:text-2xl mx-5 xl:text-3xl font-bold neon-text mt-4 text-pretty'>DEPARTMENT OF COMPUTER SCIENCE AND BUSINESS SYSTEM</p>
           <p className='text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl neon-text tracking-widest font-bold mt-4 text-pretty'> <span className='text-xl sm:text-3xl xl:text-4xl 2xl:text-5xl'>6</span> Hours Multi Domain Hackathon</p>
           <p className='text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl neon-text-yellow tracking-widest font-bold mt-4 text-pretty'>  <span className='text-xl sm:text-3xl lg:text-4xl xl:text-5xl '> 12,000&#8377; </span>Cash prize</p>
@@ -46,7 +46,7 @@ const HomePage = () => {
       <p className="neon-text text-xl sm:text-2xl md:text-2xl xl:text-3xl font-bold">ROUND 1</p>
       <p className="neon-text-yellow2 text-lg sm:text-2xl md:text-2xl xl:text-3xl font-bold">IDEATION PHASE</p>
       <p className="text-white text-lg md:text-xl xl:text-2xl font-bold">OCT 7 - OCT 14</p>
-      <a className='neon-text-red2' href="/IDEAFORGE%20PPT%20TEMPLATE.pptx" download="PPT_template_IDEAFORGE_1.0.pptx">
+      <a className='neon-text-red2' href="/assets/IDEAFORGE PPT TEMPLATE.pptx" download="PPT_template_IDEAFORGE_1.0.pptx">
   Download the PPT TEMPLATE
 </a>
 <Link to="/themes"><p className='neon-text-red'> View Problem Statement</p></Link>

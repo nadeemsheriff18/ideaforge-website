@@ -30,15 +30,28 @@ const Themes = () => {
         <Bg />
             {/* Header Section */}
             <div className="text-center mb-12">
-                <Navbar />
-                <h1 className='text-white flex flex-col justify-center items-center  text-center'>
+                
+                <h1 className='text-white flex flex-col justify-center items-center mx-4 gap-0  md:gap-2 xl:gap-3 text-center'>
           {/* Centering the image and text */}
-          <img className="w-1/2 lg:w-3/4 max-w-full" src={img} alt="IDEAFORGE 1.0" />
-          <p className='text-3xl font-bold neon-text mt-4'>DEPARTMENT OF COMPUTER SCIENCE AND BUSINESS SYSTEM</p>
-          <p className='text-2xl  neon-text tracking-widest font-bold mt-4'> <span className='text-3xl'>6</span> Hours Multi Domain Hackathon</p>
-          <p className='text-2xl  neon-text-yellow tracking-widest font-bold mt-4'>  <span className='text-5xl'> 12,000&#8377; </span>Cash prize</p>
-          
+          <img className="w-11/12 sm:w-9/12 md:w-9/12 xl:w-7/12 2xl:w-9/12 max-w-full" src={img} alt="IDEAFORGE 1.0" />
+          <p className='text-base sm:text-lg  md:text-xl lg:text-2xl mx-5 xl:text-3xl font-bold neon-text mt-4 text-pretty'>DEPARTMENT OF COMPUTER SCIENCE AND BUSINESS SYSTEM</p>
+          <p className='text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl neon-text tracking-widest font-bold mt-4 text-pretty'> <span className='text-xl sm:text-3xl xl:text-4xl 2xl:text-5xl'>6</span> Hours Multi Domain Hackathon</p>
+          <p className='text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl neon-text-yellow tracking-widest font-bold mt-4 text-pretty'>  <span className='text-xl sm:text-3xl lg:text-4xl xl:text-5xl '> 12,000&#8377; </span>Cash prize</p>
+          <div className='flex gap-6 flex-col sm:flex-row justify-center items-center'>
+          <button
+  className="btn mt-6 gap-6 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform", "_blank")}
+>
+  REGISTER
+</button>
 
+          </div>
+          <a className='neon-text-red2 z-20' href="/assets/IDEAFORGE PPT TEMPLATE.pptx" download="PPT_template_IDEAFORGE_1.0.pptx">
+  Download the PPT TEMPLATE
+</a>
+<a className='neon-text z-20' href="/assets/Problem Statements.pdf" download="PPT_template_IDEAFORGE_1.0.pptx">
+  Download the PROBLEM STATEMENT
+</a>
         </h1>
       
             </div>
@@ -168,8 +181,7 @@ const Themes = () => {
             {/*Registration*/}
             <div className='flex flex-col items-center py-7 gap-4'>
                 <h2 className='font-mono font-extrabold text-[40px] neon-text'>FREE REGISTRATION</h2>
-                <button class="btn  mt-6 gap-6 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black ">  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform" target="_blank" rel="noreferrer">REGISTER</a>
-       
+                <button class="btn  mt-6 gap-6 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black " onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform", "_blank")}>  REGISTER
 </button>
             </div>
             
