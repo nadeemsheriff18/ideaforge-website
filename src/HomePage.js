@@ -282,6 +282,11 @@ const HomePage = () => {
         </a>
 
     </button>
+    
+    <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black"> <a href="URL" target="_blank">INSTAGRAM</a>
+    </button>
+    
+
     <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black"> Bhuwan - 6382403822
     </button>
     <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black">Bhargav - 9043444670
