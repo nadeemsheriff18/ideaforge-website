@@ -7,10 +7,12 @@ module.exports = {
     extend: {
       colors: {
         'back-blue':'#080045',
+        'neon-bluy':'#00eaff',
       },
     },
     fontFamily:{
       'Glitch':["Rubik Glitch"],
+      'handjet':["Handjet"],
     },
   },
   plugins: [],

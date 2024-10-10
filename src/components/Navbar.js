@@ -3,21 +3,21 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         
-<div className='flex bg-back-blue bg-opacity-75 justify-around items-center px-4 py-2 flex-wrap'>
+<div className='flex bg-back-blue bg-opacity-75 gap-4 justify-around items-center px-4 py-2 flex-wrap '>
   <img
     src='/assets/reclogo.png'
     alt='rec'
     className=' h-10 w-12 sm:w-auto sm:h-24 mb-2 object-contain  flex-grow max-w-[150px] sm:max-w-[200px] md:max-w-[250px]'
   />
   <div>
-  <Link to="/" className="text-white  text-xs sm:text-base md:text-lg lg:text-xl font-bold hover:text-shadow-custom">
+  <Link to="/" className=" text-neon-bluy hover:text-white text-base sm:text-lg md:text-xl lg:text-2xl font-semibold hover:text-shadow-custom font-handjet tracking-widest">
     HOME
   </Link>
   </div>
   
         <div>
 
-  <Link to="/themes"  className="text-white text-xs sm:text-base md:text-lg lg:text-xl font-bold hover:text-shadow-custom">
+  <Link to="/themes"  className="text-neon-bluy hover:text-white  text-base sm:text-lg md:text-xl lg:text-2xl font-semibold  hover:text-shadow-custom font-handjet tracking-widest">
     THEMES
   </Link>
         </div>

@@ -114,7 +114,7 @@ const Footer = () => {
     </button>
     
     </p>
-    <p className='mt-32 mx-6 flex text-sm sm:text-base md:text-md lg:text-lg xl:text-lg text-center justify-center items-center neon-text'>Website by @Kabelan E @Nadeem sheriff</p>
+    <p className='font-handjet tracking-widest mt-32 mx-6 flex text-sm sm:text-base md:text-md lg:text-lg xl:text-lg text-center justify-center items-center neon-text'>Website by @Kabelan E @Nadeem sheriff</p>
         </div>
         
 
