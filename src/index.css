@@ -36,3 +36,79 @@
   background-color: rgba(8, 0, 69, 1); /* Fully visible on hover */
   transform: scale(0.98);
 }
+.neon-text {
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #0ff, 0 0 40px #f0f,
+    0 0 80px #0ff, 0 0 100px #f0f;
+}
+.neon-text-yellow {
+  color: #ffffff; /* Bright yellow color */
+  text-shadow: 0 0 5px #ffff00, /* Bright yellow */ 0 0 10px #ffd700,
+    /* Gold */ 0 0 20px #ffd700, /* Gold */ 0 0 40px #ffea00,
+    /* Bright yellow with a glow */ 0 0 80px #ffff00,
+    /* Bright yellow glow */ 0 0 100px #ffd700; /* Gold glow */
+}
+/* .neon-text {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: -3px -3px 0px #f0f, 3px 3px 0px #0ff;
+} */
+/* From Uiverse.io by nikk7007 */
+.btn {
+  --color: #00eaff; /* Neon blue color */
+  --color2: rgb(10, 25, 30); /* Dark background color */
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: #00a97f; /* Change text color on hover */
+  box-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff, 0 0 60px #00eaff; /* Glowing shadow effect */
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
