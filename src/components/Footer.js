@@ -48,7 +48,7 @@ const Footer = () => {
   </a>
 </button>
 
-    <button className="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black flex items-center gap-2">
+    <button className="z-20 btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black flex items-center gap-2" onClick={() => window.open("https://www.instagram.com/idea_forge1.0/profilecard/?utm_source=qr&igsh=MTdkdTlqcXl3N2dzbg%3D%3D", "_blank")}>
   <svg
   
     xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ const Footer = () => {
       d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"
     ></path>
   </svg>
-  
+
   INSTAGRAM
 </button>
 
