@@ -1,3 +1,162 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* From Uiverse.io by Tiagoadag */
+.card {
+  width: 490px;
+  height: 254px;
+  background-image: linear-gradient(
+    163deg,
+    rgba(8, 253, 253, 0.3) 0%,
+    rgba(55, 0, 255, 0.3) 100%
+  );
+
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+
+.card:hover {
+  background-image: linear-gradient(
+    163deg,
+    rgba(8, 253, 253, 0.9) 0%,
+    rgba(55, 0, 255, 0.9) 100%
+  );
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
+.card2 {
+  width: 100%; /* Adjusted to take full width of card */
+  height: 100%; /* Adjusted to take full height of card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px; /* Make sure this matches with .card */
+  transition: all 0.3s;
+}
+
+.card2:hover {
+  background-color: rgba(8, 0, 69, 1);
+  transform: scale(0.98);
+}
+
+.neon-text {
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #0ff, 0 0 40px #f0f,
+    0 0 80px #0ff, 0 0 100px #f0f;
+}
+.neon-text-yellow {
+  color: #ffffff; /* Bright white color */
+  text-shadow: 0 0 5px #ffff00, /* Bright yellow */ 0 0 10px #c5a84a,
+    /* Duller gold */ 0 0 20px #c5a84a, /* Duller gold */ 0 0 40px #e6c700,
+    /* Slightly dull gold */ 0 0 80px #ffff00,
+    /* Bright yellow glow */ 0 0 100px #c5a84a; /* Duller gold glow */
+}
+.neon-text-yellow2 {
+  color: #ffffff; /* Bright white color */
+  text-shadow: 0 0 2px #ffff00, /* Reduced bright yellow */ 0 0 6px #c5a84a,
+    /* Reduced duller gold */ 0 0 10px #c5a84a,
+    /* Reduced duller gold */ 0 0 20px #e6c700,
+    /* Reduced slightly dull gold */ 0 0 40px #ffff00,
+    /* Reduced bright yellow glow */ 0 0 40px #c5a84a; /* Reduced duller gold glow */
+}
+.neon-text-red {
+  color: #ffffff; /* Bright white color */
+  text-shadow: 0 0 5px #ff0000, /* Bright red */ 0 0 10px #ff0000,
+    /* Strong red */ 0 0 20px #ff0000, /* Strong red */ 0 0 40px #ff0000,
+    /* Intense red glow */ 0 0 80px #ff0000,
+    /* Bright red glow */ 0 0 100px #ff0000; /* Deep red glow */
+}
+.neon-text-red2 {
+  color: #ffffff; /* Bright white color */
+  text-shadow: 0 0 3px #ff0000, /* Bright red */ 0 0 6px #ff4d4d,
+    /* Soft red */ 0 0 10px #ff4d4d, /* Softer red */ 0 0 20px #ff6666,
+    /* Slightly faded red */ 0 0 40px #ff0000,
+    /* Bright red glow */ 0 0 60px #ff4d4d; /* Softer red glow */
+}
+/* .neon-text {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: -3px -3px 0px #f0f, 3px 3px 0px #0ff;
+} */
+/* From Uiverse.io by nikk7007 */
+.btn {
+  --color: #00eaff; /* Neon blue color */
+  --color2: rgb(10, 25, 30); /* Dark background color */
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 500;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: #00a97f; /* Change text color on hover */
+  box-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff, 0 0 60px #00eaff; /* Glowing shadow effect */
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(30px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.arrow {
+  display: inline-block; /* To make animation work properly */
+  animation: bounce 1s infinite;
+}
+/* From Uiverse.io by youngjid */

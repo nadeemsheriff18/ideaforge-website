@@ -9,7 +9,7 @@ const Footer = () => {
 
                 {/* Right Section (Contact Info) */}
                 <div className='flex flex-col md:flex-col gap-4'>
-                    <h6 className='font-extrabold tracking-wide md:tracking-wider text-2xl text-center md:text-left md:font-mono md:text-3xl'>CONTACT</h6>
+                    <h6 className='font-extrabold tracking-wide md:tracking-wider text-2xl text-center md:text-left md:font-mono md:text-4xl'>CONTACT</h6>
 
                     {/* Phone Contacts */}
                     <div className='flex flex-col gap-2 items-start justify-center md:flex-row md:items-start'>

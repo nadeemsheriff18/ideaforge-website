@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Bg from './Bg';
+import img from "./Screenshot 2024-10-10 154614-Photoroom.png";
 import { MdHealthAndSafety } from "react-icons/md";
 import { MdAgriculture } from "react-icons/md";
 import { FaPeopleGroup } from "react-icons/fa6";
@@ -23,33 +25,37 @@ const Themes = () => {
     return (
         <div
             className="bg-cover bg-center min-h-screen text-white py-6 px-4"
-            style={{ backgroundImage: "url('/assets/background.jpg')" }}
+            
         >
+        <Bg />
             {/* Header Section */}
             <div className="text-center mb-12">
                 <Navbar />
-                <h2 className="text-xl md:text-xl font-bold uppercase tracking-widest mb-4">
-                    Department of Computer Science and Business Systems
-                </h2>
-                <h1 className="text-5xl md:text-6xl font-extrabold tracking-wide text-purple-300 mb-4">
-                    IdeaForge 1.0
-                </h1>
-                <h3 className="text-2xl md:text-3xl font-bold text-pink-500">
-                    Prize Pool - ₹12,000/-
-                </h3>
+                <h1 className='text-white flex flex-col justify-center items-center  text-center'>
+          {/* Centering the image and text */}
+          <img className="w-1/2 lg:w-3/4 max-w-full" src={img} alt="IDEAFORGE 1.0" />
+          <p className='text-3xl font-bold neon-text mt-4'>DEPARTMENT OF COMPUTER SCIENCE AND BUSINESS SYSTEM</p>
+          <p className='text-2xl  neon-text tracking-widest font-bold mt-4'> <span className='text-3xl'>6</span> Hours Multi Domain Hackathon</p>
+          <p className='text-2xl  neon-text-yellow tracking-widest font-bold mt-4'>  <span className='text-5xl'> 12,000&#8377; </span>Cash prize</p>
+          
+
+        </h1>
+      
             </div>
 
             {/* Themes Section */}
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto relative z-10">
                 <h2 className="text-5xl font-extrabold font-mono tracking-wider text-center mb-8">Themes</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center">
                     {/* Healthcare */}
+                    <button>
                     <div
-                        className={`flex flex-col items-center p-4 border-4 border-[#08fdff] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
+                        className={`flex flex-col items-center p-4 border-4 border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
                         onClick={() => toggleExpand('Healthcare')}
                     >
                         <MdHealthAndSafety size={40} />
                         <h3 className="text-xl font-bold">Healthcare</h3>
+                        
                         {expandedTheme === 'Healthcare' && (
                             <p className="text-center mt-4 font-bold text-lg">
                                 Build an AI tool that analyzes changes in speech
@@ -60,10 +66,11 @@ const Themes = () => {
                             </p>
                         )}
                     </div>
+                    </button>
 
                     {/* Agriculture */}
                     <div
-                        className={`flex flex-col items-center p-4 border-4 border-[#08fdff] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
+                        className={`flex flex-col items-center p-4 border-4 border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
                         onClick={() => toggleExpand('Agriculture')}
                     >
                         <MdAgriculture size={40} />
@@ -82,7 +89,7 @@ const Themes = () => {
 
                     {/* Social Responsibility */}
                     <div
-                        className={`flex flex-col items-center p-4 border-4 border-[#08fdff] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
+                        className={`flex flex-col items-center p-4 border-4 border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
                         onClick={() => toggleExpand('Social Responsibility')}
                     >
                         <FaPeopleGroup size={40} />
@@ -102,7 +109,7 @@ const Themes = () => {
 
                     {/* Financial Inclusion */}
                     <div
-                        className={`flex flex-col items-center p-4 border-4 border-[#08fdff] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
+                        className={`flex flex-col items-center p-4 border-4 border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
                         onClick={() => toggleExpand('Financial Inclusion')}
                     >
                         <GiTakeMyMoney size={40} />
@@ -121,7 +128,7 @@ const Themes = () => {
 
                     {/* Smart Automation */}
                     <div
-                        className={`flex flex-col items-center p-4 border-4 border-[#08fdff] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
+                        className={`flex flex-col items-center p-4 border-4 border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
                         onClick={() => toggleExpand('Smart Automation')}
                     >
                         <MdPrecisionManufacturing size={40} />
@@ -140,7 +147,7 @@ const Themes = () => {
 
                     {/* Smart Education */}
                     <div
-                        className={`flex flex-col items-center p-4 border-4 border-[#08fdff] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
+                        className={`flex flex-col items-center p-4 border-4 border-sky-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] rounded-lg hover:bg-[#75e6e4] transition duration-300 ease-in-out cursor-pointer`}
                         onClick={() => toggleExpand('Smart Education')}
                     >
                         <GiBrain size={40} />
@@ -160,8 +167,10 @@ const Themes = () => {
             </div>
             {/*Registration*/}
             <div className='flex flex-col items-center py-7 gap-4'>
-                <h2 className='font-mono font-extrabold text-[40px] text-pink-500'>FREE REGISTRATION</h2>
-                <a href='https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform'><button className='rounded-3xl p-3 bg-white text-black text-xl font-extrabold hover:bg-[#f76de2] transition duration-300 ease-in-out cursor-pointer'>REGISTER</button></a>
+                <h2 className='font-mono font-extrabold text-[40px] neon-text'>FREE REGISTRATION</h2>
+                <button class="btn  mt-6 gap-6 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black ">  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform" target="_blank" rel="noreferrer">REGISTER</a>
+       
+</button>
             </div>
             
             <Footer />

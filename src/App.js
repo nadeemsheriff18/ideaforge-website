@@ -1,10 +1,17 @@
-
-
+import HomePage from "./components/HomePage";
+import Themes from "./components/Themes";
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 function App() {
   return (
-    <div className="flex justify-center items-center">
-      <h1 className='text-3xl font-bold '>Ideaforge 1.0</h1>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/themes" element={<Themes />} />
+          
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
