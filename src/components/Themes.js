@@ -7,6 +7,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { GiBrain } from "react-icons/gi";
 import { MdPrecisionManufacturing } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 const Themes = () => {
     // State to keep track of which theme is expanded
@@ -22,15 +23,10 @@ const Themes = () => {
     };
 
     return (
-        <div
-            className="bg-cover bg-center min-h-screen text-white py-6 px-4"
-            
-        >
+        <>
+         <div className="relative flex justify-center items-center max-w-screen overflow-hidden">
         <Bg />
-            {/* Header Section */}
-            <div className="text-center mb-12">
-                
-                <h1 className='text-white flex flex-col justify-center items-center mx-4 gap-0  md:gap-2 xl:gap-3 text-center'>
+        <h1 className='text-white flex flex-col justify-center items-center mx-4 gap-0  md:gap-2 xl:gap-3 text-center'>
           {/* Centering the image and text */}
           <img className="w-11/12 sm:w-9/12 md:w-9/12 xl:w-7/12 2xl:w-9/12 max-w-full" src={img} alt="IDEAFORGE 1.0" />
           <p className='text-base sm:text-lg  md:text-xl lg:text-2xl mx-5 xl:text-3xl font-bold neon-text mt-4 text-pretty'>DEPARTMENT OF COMPUTER SCIENCE AND BUSINESS SYSTEM</p>
@@ -52,12 +48,14 @@ const Themes = () => {
   Download the PROBLEM STATEMENT
 </a>
         </h1>
-      
-            </div>
+      </div>
+            -------
+           
+         {/* Themes Section */}
+         <div className="max-w-7xl mx-auto relative z-10 text-white">
+          
 
-            {/* Themes Section */}
-            <div className="max-w-7xl mx-auto relative z-10">
-                <h2 className="text-5xl font-extrabold font-mono tracking-wider text-center mb-8">Themes</h2>
+                <h2 className="text-white hover:scale-105 transition-transform duration-300 flex justify-center items-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold tracking-widest neon-text mb-9">Themes</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center">
                     {/* Healthcare */}
                     <button>
@@ -183,9 +181,17 @@ const Themes = () => {
                 <button class="btn  mt-6 gap-6 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black " onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform", "_blank")}>  REGISTER
 </button>
             </div>
+        </>
+
+            
+        
+      
+           
+        
+           
             
           
-        </div>
+       
     );
 };
 
