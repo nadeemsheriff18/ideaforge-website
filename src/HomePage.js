@@ -29,24 +29,28 @@ const HomePage = () => {
 
       {/* Event Phases Section */}
       {/* Event Phases Section */}
-<section className="flex gap-8 flex-col justify-center items-center">
-  <div className="card">
-    <div className="card2">
+  
+<section className='flex gap-8 flex-col justify-center items-center'>
+
+  <div className="w-[490px] h-[254px] bg-transparent border-2 border-transparent rounded-xl hover:border-[#08fdff] transition-all duration-300">
+    <div className="w-full h-full bg-[#132f6f] hover:bg-back-blue  bg-opacity-80 rounded-xl flex flex-col justify-center items-center transition-all duration-300">
       <p className="text-white text-2xl font-bold">ROUND 1</p>
       <p className="text-white text-2xl font-bold">IDEATION PHASE</p>
       <p className="text-white text-xl font-bold">OCT 7 - OCT 14</p>
     </div>
   </div>
+
   
-  <div className="card">
-    <div className="card2">
+  <div className="w-[490px] h-[254px] bg-transparent border-2 border-transparent rounded-xl hover:border-[#08fdff] transition-all duration-300">
+    <div className="w-full h-full bg-[#132f6f] hover:bg-back-blue bg-opacity-80 rounded-xl flex flex-col justify-center items-center transition-all duration-300">
       <p className="text-white text-2xl font-bold">DEVELOPMENT PHASE</p>
       <p className="text-white text-xl font-bold">OCT 16 - OCT 21</p>
     </div>
   </div>
-  
-  <div className="card">
-    <div className="card2">
+
+ 
+  <div className="w-[490px] h-[254px] bg-transparent border-2 border-transparent rounded-xl hover:border-[#08fdff] transition-all duration-300">
+    <div className="w-full h-full bg-[#132f6f] hover:bg-back-blue bg-opacity-80  rounded-xl flex flex-col justify-center items-center transition-all duration-300">
       <p className="text-white text-2xl font-bold">ROUND 2</p>
       <p className="text-white text-2xl font-bold">FINALE PHASE</p>
       <p className="text-white text-xl font-bold">&#128336; STAY TUNED</p>
@@ -54,11 +58,13 @@ const HomePage = () => {
   </div>
 </section>
 
+
+
       <section className=' pb-20'>
   <p className='text-white flex justify-center items-center text-3xl font-bold tracking-widest neon-text mb-9 mt-9'>
     FAQ
   </p>
-  <div id="accordion-collapse" data-accordion="collapse" className='mx-48'>
+  <div id="accordion-collapse" data-accordion="collapse" className='mx-48 bg-back-blue bg-opacity-80'>
     <h2 id="accordion-collapse-heading-1">
       <button
         type="button"

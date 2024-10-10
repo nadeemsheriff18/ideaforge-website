@@ -38,7 +38,7 @@ const App = () => {
         },
         modes: {
           push: {
-            quantity: 5,
+            quantity: 2,
           },
           repulse: {
             distance: 150,
@@ -64,17 +64,17 @@ const App = () => {
             default: "bounce",
           },
           random: false,
-          speed: 4,
+          speed: 3,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 200,
+          value: 250,
         },
         opacity: {
-          value: 0.5,
+          value: 0.4,
         },
         shape: {
           type: "circle",
