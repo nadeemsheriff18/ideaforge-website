@@ -1,9 +1,12 @@
-
-
+import React from 'react'
+import HomePage from './HomePage';
+import NavBar from './navbar';
 function App() {
   return (
-    <div className="flex justify-center items-center">
-      <h1 className='text-3xl font-bold '>Ideaforge 1.0</h1>
+    <div >
+      {/* <h1 className='text-3xl font-bold '>Ideaforge 1.0</h1> */}
+      <NavBar/>
+      <HomePage/>
     </div>
   );
 }
