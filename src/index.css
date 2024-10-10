@@ -1,7 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer utilities {
+  .text-shadow-custom {
+    text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #0ff, 0 0 40px #f0f,
+      0 0 80px #0ff, 0 0 100px #f0f;
+  }
+}
 /* From Uiverse.io by Tiagoadag */
 .card {
   width: 490px;

@@ -17,13 +17,13 @@ const HomePage = () => {
           <p className='text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl neon-text tracking-widest font-bold mt-4 text-pretty'> <span className='text-xl sm:text-3xl xl:text-4xl 2xl:text-5xl'>6</span> Hours Multi Domain Hackathon</p>
           <p className='text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl neon-text-yellow tracking-widest font-bold mt-4 text-pretty'>  <span className='text-xl sm:text-3xl lg:text-4xl xl:text-5xl '> 12,000&#8377; </span>Cash prize</p>
           <div className='flex gap-6 flex-col sm:flex-row justify-center items-center'>
-          <button class="btn  mt-6 gap-6 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black ">  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform" target="_blank" rel="noreferrer" >REGISTER</a>
+          <button class="btn  mt-6 gap-6 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black " onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform", "_blank")}> REGISTER
        
 </button>
 <Link to="/themes"><button class="btn w-fit sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl hover:text-black "> VIEW PROBLEM STATEMENT
 </button></Link>
           </div>
-          <p className='mt-5 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl arrow neon-text-red '>&#8681;</p>
+          <p className='mt-5 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl arrow neon-text '>&#8681;</p>
         </h1>
       </div>
 
@@ -280,14 +280,15 @@ const HomePage = () => {
         <p className="mb-2 pl-4 text-white">&#8594; <span className='font-bold'>YES</span>, OD will be provided for every participant.</p>
       </div>
     </div>
-    <p className='flex flex-col justify-center items-center mt-7 font-bold text-white text-sm sm:text-base md:text-lg lg:text-xl' >GOT MORE DOUBTS ?
+    <p className='flex flex-col justify-center items-center mt-7 font-bold text-white text-sm sm:text-base md:text-lg lg:text-xl text-shadow-custom' >GOT MORE DOUBTS ? 
+    <p className='text-sm sm:text-base md:text-lg lg:text-2xl text-shadow-custom'>Contact us !!</p>
     <button class="btn mt-5 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black"> <a href="mailto:ideaforge@rajalakshmi.edu.in?subject=Hello&body=I%20would%20like%20to%20know%20more%20about..." >
             Email Us
         </a>
 
     </button>
     
-    <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black"> <a href='https://www.instagram.com/idea_forge1.0/profilecard/?utm_source=qr&igsh=MTdkdTlqcXl3N2dzbg%3D%3D' target="_blank" rel="noreferrer">INSTAGRAM</a>
+    <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black" onClick={() => window.open("https://www.instagram.com/idea_forge1.0/profilecard/?utm_source=qr&igsh=MTdkdTlqcXl3N2dzbg%3D%3D", "_blank")}> INSTAGRAM
     </button>
     
 
@@ -303,7 +304,7 @@ const HomePage = () => {
 
 
         <section className='flex  justify-center md:text-lg items-center mb-20'><div className='flex  mt-6 flex-col sm:flex-row justify-center items-center  gap-6'>
-          <button class="btn  w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black "> <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform" target="_blank" rel="noreferrer">REGISTER</a>
+          <button class="btn  w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black " onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform", "_blank")}>REGISTER
        
 </button>
 <Link to="/themes"><button class="btn w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black "> VIEW PROBLEM STATEMENT

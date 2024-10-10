@@ -52,9 +52,9 @@ const App = () => {
         },
         links: {
           color: "#31edf7",
-          distance: 150,
+          distance: 180,
           enable: true,
-          opacity: 1,
+          opacity: 0.7,
           width: 1,
         },
         move: {
@@ -64,14 +64,14 @@ const App = () => {
             default: "bounce",
           },
           random: false,
-          speed: 3,
+          speed: 2,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 250,
+          value: 200,
         },
         opacity: {
           value: 0.4,
