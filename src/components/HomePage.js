@@ -19,7 +19,7 @@ const HomePage = () => {
           <div className='flex gap-6 flex-col sm:flex-row justify-center items-center'>
           <button class="btn  mt-6 gap-6 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black " onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdSXaf0hRNj5VSnAydFDtiCegmmo00L0LYzm3ceDqMBFyc6QA/viewform", "_blank")}> REGISTER
        
-</button>
+          </button>
 <Link to="/themes"><button class="btn w-fit sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl hover:text-black "> VIEW PROBLEM STATEMENT
 </button></Link>
           </div>

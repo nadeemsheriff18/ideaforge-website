@@ -48,7 +48,7 @@ const Themes = () => {
           <a className='neon-text-red2 z-20' href="/assets/IDEAFORGE PPT TEMPLATE.pptx" download="PPT_template_IDEAFORGE_1.0.pptx">
   Download the PPT TEMPLATE
 </a>
-<a className='neon-text z-20' href="/assets/Problem Statements.pdf" download="PPT_template_IDEAFORGE_1.0.pptx">
+<a className='neon-text z-20' href="/assets/Problem Statements.pdf" download="Problem_Statements.pdf">
   Download the PROBLEM STATEMENT
 </a>
         </h1>
