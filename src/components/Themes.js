@@ -7,8 +7,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { GiBrain } from "react-icons/gi";
 import { MdPrecisionManufacturing } from "react-icons/md";
-import Footer from './Footer';
-import Navbar from './Navbar';
+
 const Themes = () => {
     // State to keep track of which theme is expanded
     const [expandedTheme, setExpandedTheme] = useState(null);
@@ -185,7 +184,7 @@ const Themes = () => {
 </button>
             </div>
             
-            <Footer />
+          
         </div>
     );
 };

@@ -280,24 +280,7 @@ const HomePage = () => {
         <p className="mb-2 pl-4 text-white">&#8594; <span className='font-bold'>YES</span>, OD will be provided for every participant.</p>
       </div>
     </div>
-    <p className='flex flex-col justify-center items-center mt-7 font-bold text-white text-sm sm:text-base md:text-lg lg:text-xl text-shadow-custom' >GOT MORE DOUBTS ? 
-    <p className='text-sm sm:text-base md:text-lg lg:text-2xl text-shadow-custom'>Contact us !!</p>
-    <button class="btn mt-5 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black"> <a href="mailto:ideaforge@rajalakshmi.edu.in?subject=Hello&body=I%20would%20like%20to%20know%20more%20about..." >
-            Email Us
-        </a>
-
-    </button>
     
-    <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black" onClick={() => window.open("https://www.instagram.com/idea_forge1.0/profilecard/?utm_source=qr&igsh=MTdkdTlqcXl3N2dzbg%3D%3D", "_blank")}> INSTAGRAM
-    </button>
-    
-
-    <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black"> Bhuwan - 6382403822
-    </button>
-    <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black">Bhargav - 9043444670
-    </button>
-    
-    </p>
   </div>
   
 </section>
