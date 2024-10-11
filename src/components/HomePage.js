@@ -41,7 +41,7 @@ const HomePage = () => {
               </button>
             </Link>
           </div>
-          <p className='mt-5 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl arrow neon-text '>&#8681;</p>
+          <p className='mt-5 text-xl sm:text-2xl lg:text-3xl xl:text-4xl arrow neon-text '>&#8681;</p>
         </h1>
       </div>
 
@@ -51,9 +51,42 @@ const HomePage = () => {
         </p>
       </section>
 
-      <section className='flex gap-8 flex-col justify-center items-center'>
-        {/* Your event phases section */}
-      </section>
+      <section className='flex gap-8 flex-col justify-center items-center '>
+
+  <div className="hover:-translate-y-1 hover:box-shadow-custom w-2/3 h-[240px] md:w-[490px] sm:h-[230px] md:h-[260px] lg:h-[300px] bg-transparent border-2 border-transparent rounded-xl hover:border-[#08fdff] transition-all duration-300">
+    <div className=" w-full h-full gap-3 bg-[#132f6f] hover:bg-back-blue  bg-opacity-80 rounded-xl flex flex-col justify-center items-center transition-all duration-300">
+      <p className="neon-text-teal text-2xl sm:text-3xl md:text-3xl xl:text-4xl font-bold font-Changa tracking-widest">ROUND 1</p>
+      <p className="neon-text-yellow2 text-xl sm:text-2xl md:text-2xl xl:text-3xl font-bold font-Poppins tracking-widest">IDEATION PHASE</p>
+      <p className="text-white text-lg md:text-xl xl:text-2xl font-bold font-handjet tracking-widest neon-text-green">OCT 7 - OCT 14</p>
+      <a className=' font-Changa neon-text text-sm md:text-base xl:text-xl' href="/assets/IDEAFORGE PPT TEMPLATE.pptx" download="PPT_template_IDEAFORGE_1.0.pptx">
+  Download the PPT TEMPLATE
+</a>
+<Link to="/themes"><p className='font-Changa neon-text text-sm md:text-base xl:text-xl '> View Problem Statement</p></Link>
+   
+
+    </div>
+    
+    
+    
+  </div>
+
+  
+  <div className=" hover:-translate-y-1 hover:box-shadow-custom w-2/3 h-[240px] md:w-[490px] sm:h-[230px] md:h-[260px] lg:h-[300px] bg-transparent border-2 border-transparent rounded-xl hover:border-[#08fdff] transition-all duration-300">
+    <div className="w-full h-full gap-3   bg-[#132f6f] hover:bg-back-blue bg-opacity-80 rounded-xl flex flex-col justify-center items-center transition-all duration-300">
+      <p className="neon-text-yellow2 text-xl sm:text-2xl md:text-2xl xl:text-3xl font-bold font-Poppins tracking-widest">DEVELOPMENT PHASE</p>
+      <p className="text-white text-lg md:text-xl xl:text-2xl font-bold font-handjet tracking-widest neon-text-green">OCT 16 - OCT 21</p>
+    </div>
+  </div>
+
+ 
+  <div className="hover:-translate-y-1 hover:box-shadow-custom w-2/3 h-[240px] md:w-[490px] sm:h-[230px] md:h-[260px] lg:h-[300px] bg-transparent border-2 border-transparent rounded-xl hover:border-[#08fdff] transition-all duration-300">
+    <div className="w-full h-full  gap-3 bg-[#132f6f] hover:bg-back-blue bg-opacity-80  rounded-xl flex flex-col justify-center items-center transition-all duration-300">
+      <p className="neon-text-teal text-2xl sm:text-3xl md:text-3xl xl:text-4xl font-bold font-Changa tracking-widest">ROUND 2</p>
+      <p className="neon-text-yellow2 text-xl sm:text-2xl md:text-2xl xl:text-3xl font-bold font-Poppins tracking-widest">FINALE PHASE</p>
+      <p className="text-white text-lg md:text-xl xl:text-2xl font-bold font-handjet tracking-widest neon-text-green">&#128336;STAY TUNED...</p>
+    </div>
+  </div>
+</section>
 
       {/* FAQ Section with Accordions */}
       <section className='pb-20 z-40 font-Poppins font-semibold filter backdrop-blur-sm'>

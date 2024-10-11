@@ -47,8 +47,9 @@ const App = () => {
             mode: "push",
           },
           onHover: {
-            enable: true, // Disable hover interaction on small screens
+            enable:!isSmallScreen, // Disable hover interaction on small screens
             mode: "repulse",
+            
           },
         },
         modes: {

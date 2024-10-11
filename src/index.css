@@ -10,6 +10,11 @@
     box-shadow: 0 0 3px #00eaff, 0 0 6px #00eaff, 0 0 12px #00eaff,
       0 0 24px #00eaff, 0 0 48px #00eaff;
   }
+  .neon-text-teal-text {
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #0ff, 0 0 40px #f0f,
+      0 0 80px #0ff, 0 0 100px #f0f;
+  }
 }
 /* From Uiverse.io by Tiagoadag */
 .card {

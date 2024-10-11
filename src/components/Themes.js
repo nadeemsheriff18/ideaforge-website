@@ -23,7 +23,7 @@ const Themes = () => {
 
     return (
         <>
-        <div className="relative flex justify-center items-center max-w-screen min-h-screen overflow-hidden font-Poppins">
+        <div className="relative flex justify-center items-center  max-w-screen pt-5 pb-5 md:pt-2  md:min-h-screen overflow-hidden font-Poppins">
         <Bg />
         <h1 className='text-white flex flex-col justify-center items-center mx-4 gap-0  md:gap-2 xl:gap-3 text-center z-20 '>
           {/* Centering the image and text */}
@@ -54,8 +54,7 @@ const Themes = () => {
 <a className='neon-text-green mt-3 z-20 font-Changa  text-sm md:text-base xl:text-xl animate-rubble' href="/assets/Problem Statements.pdf" download="Problem_Statements.pdf">
   Download the PROBLEM STATEMENT
 </a>
-          
-          <p className='mt-5 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl arrow neon-text '>&#8681;</p>
+<p className=' mt-5 text-xl sm:text-2xl lg:text-3xl xl:text-4xl arrow neon-text invisible sm:visible'>&#8681;</p>      
         </h1>
       </div>
         <div
