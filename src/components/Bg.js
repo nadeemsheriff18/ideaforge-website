@@ -1,9 +1,24 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import React from "react";
 
 const App = () => {
   const [init, setInit] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  // Detect screen size using matchMedia
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsSmallScreen(mediaQuery.matches);
+
+    const handleResize = (e) => setIsSmallScreen(e.matches);
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -28,11 +43,11 @@ const App = () => {
       interactivity: {
         events: {
           onClick: {
-            enable: true,
+            enable: !isSmallScreen, // Disable click interaction on small screens
             mode: "push",
           },
           onHover: {
-            enable: true,
+            enable: true, // Disable hover interaction on small screens
             mode: "repulse",
           },
         },
@@ -41,7 +56,7 @@ const App = () => {
             quantity: 2,
           },
           repulse: {
-            distance: 150,
+            distance: !isSmallScreen?150:80,
             duration: 0.4,
           },
         },
@@ -85,20 +100,18 @@ const App = () => {
       },
       detectRetina: true,
     }),
-    []
+    [isSmallScreen]
   );
 
   if (init) {
     return (
-      <div className="absolute w-screen h-screen">
-        
+      <div className="absolute w-screen -z-20 h-screen">
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
-          className="absolute -z-10 inset-0"
+          className="absolute -z-20 inset-0"
         />
-        {/* Your content here, if any */}
       </div>
     );
   }
@@ -106,4 +119,4 @@ const App = () => {
   return <></>;
 };
 
-export default App;
+export default React.memo(App);

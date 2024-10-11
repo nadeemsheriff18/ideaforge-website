@@ -6,6 +6,10 @@
     text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 20px #0ff, 0 0 40px #f0f,
       0 0 80px #0ff, 0 0 100px #f0f;
   }
+  .box-shadow-custom {
+    box-shadow: 0 0 3px #00eaff, 0 0 6px #00eaff, 0 0 12px #00eaff,
+      0 0 24px #00eaff, 0 0 48px #00eaff;
+  }
 }
 /* From Uiverse.io by Tiagoadag */
 .card {
@@ -19,6 +23,25 @@
 
   border-radius: 20px;
   transition: all 0.4s;
+}
+@keyframes rubble {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-2px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(2px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(-1px) rotate(0deg);
+  }
+}
+
+.animate-rubble {
+  animation: rubble 1s ease-in-out infinite;
 }
 
 .card:hover {
@@ -80,6 +103,21 @@
     /* Slightly faded red */ 0 0 40px #ff0000,
     /* Bright red glow */ 0 0 60px #ff4d4d; /* Softer red glow */
 }
+.neon-text-teal {
+  color: #ffffff; /* Bright white color */
+  text-shadow: 0 0 3px #00ffd1, /* Vibrant teal */ 0 0 6px #33ffe0,
+    /* Soft teal */ 0 0 10px #33ffe0, /* Softer teal */ 0 0 20px #66ffeb,
+    /* Slightly faded teal */ 0 0 40px #00ffd1,
+    /* Bright teal glow */ 0 0 60px #33ffe0; /* Softer teal glow */
+}
+.neon-text-green {
+  color: #ffffff; /* Bright white color */
+  text-shadow: 0 0 3px #00ff00, /* Bright green */ 0 0 6px #66ff66,
+    /* Soft lime green */ 0 0 10px #66ff66,
+    /* Softer lime green */ 0 0 20px #99ff99,
+    /* Slightly faded lime */ 0 0 40px #00ff00,
+    /* Bright green glow */ 0 0 60px #66ff66; /* Softer lime glow */
+}
 /* .neon-text {
   font-size: 64px;
   font-weight: bold;
@@ -101,7 +139,7 @@
   cursor: pointer;
   z-index: 1;
   font-weight: 500;
-  font-family: "Roboto", "Segoe UI", sans-serif;
+
   text-transform: uppercase;
   color: var(--color);
 }

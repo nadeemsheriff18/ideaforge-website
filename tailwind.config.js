@@ -13,6 +13,8 @@ module.exports = {
     fontFamily:{
       'Glitch':["Rubik Glitch"],
       'handjet':["Handjet"],
+      'Poppins':["Poppins"],
+      'Changa':["Changa"],
     },
   },
   plugins: [],

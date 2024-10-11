@@ -4,12 +4,12 @@ import { IoMdCall } from "react-icons/io";
 import { SiGmail } from "react-icons/si";
 const Footer = () => {
     return (
-        <div className='pb-8 mt-7 bg-back-blue bg-opacity-65 z-20'>
-            <p className='flex flex-col justify-center items-center  font-bold text-white text-sm sm:text-base md:text-lg lg:text-xl neon-text'>GOT MORE DOUBTS ?</p>
-            <p className='text-sm flex mt-3 mb-3 gap-4 lg:flex-row flex-col justify-center items-center sm:text-base md:text-lg lg:text-2xl neon-text'> Contact us !! </p>
-                <p className='text-sm flex mt-3 mb-3 gap-4 lg:flex-row flex-col justify-center items-center sm:text-base md:text-lg lg:text-2xl text-shadow-custom' >
+        <div className='pb-8 mt-7 mx-4 bg-back-blue bg-opacity-65 z-20 font-bold '>
+            <p className='flex flex-col justify-center items-center  font-bold text-white text-base sm:text-lg md:text-lg lg:text-2xl neon-text-teal tracking-widest font-Changa'>GOT MORE DOUBTS ?</p>
+            <p className='text-white font-Changa hover:-translate-y-1 mt-5 transition-transform duration-300 flex justify-center items-center text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold tracking-widest neon-text mb-9 font-changa'> CONTACT US !! </p>
+                <p className='text-sm flex mt-3 mb-3 gap-4 lg:flex-row flex-wrap justify-center items-center sm:text-base md:text-lg lg:text-2xl text-shadow-custom' >
     
-    <button className="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black flex items-center justify-center gap-2">
+    <button className="btn font-Changa font-bold mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black flex items-center justify-center gap-2">
   <a 
     href="mailto:ideaforge@rajalakshmi.edu.in?subject=Hello&body=I%20would%20like%20to%20know%20more%20about..." 
     className="flex items-center" // Added flex here to ensure the link aligns its content
@@ -48,7 +48,7 @@ const Footer = () => {
   </a>
 </button>
 
-    <button className="z-20 btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black flex items-center gap-2" onClick={() => window.open("https://www.instagram.com/idea_forge1.0/profilecard/?utm_source=qr&igsh=MTdkdTlqcXl3N2dzbg%3D%3D", "_blank")}>
+    <button className="z-20 font-Changa btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black flex items-center gap-2" onClick={() => window.open("https://www.instagram.com/idea_forge1.0/profilecard/?utm_source=qr&igsh=MTdkdTlqcXl3N2dzbg%3D%3D", "_blank")}>
   <svg
   
     xmlns="http://www.w3.org/2000/svg"
@@ -108,13 +108,14 @@ const Footer = () => {
 
     
 
-    <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black"> Bhuwan - 6382403822
+    <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black font-Changa "> Bhuwan - 6382403822
     </button>
-    <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black">Bhargav - 9043444670
+    <button class="btn mt-3 w-fit text-sm sm:text-base md:text-lg lg:text-xl hover:text-black font-Changa">Bhargav - 9043444670
     </button>
     
     </p>
-    <p className='font-handjet tracking-widest mt-32 mx-6 flex text-sm sm:text-base md:text-md lg:text-lg xl:text-lg text-center justify-center items-center neon-text'>Website by @Kabelan E @Nadeem sheriff</p>
+    <p className='bg-transparent filer backdrop-blur-sm font-handjet tracking-widest mt-32 mx-6 flex text-sm sm:text-base md:text-md lg:text-lg xl:text-lg text-center justify-center items-center neon-text'>@CSBS</p>
+    <p className='bg-transparent filer backdrop-blur-sm font-handjet tracking-widest mt-4 mx-6 flex text-sm sm:text-base md:text-md lg:text-lg xl:text-lg text-center justify-center items-center neon-text'>Website by @Kabelan E @Nadeem sheriff</p>
         </div>
         
 
